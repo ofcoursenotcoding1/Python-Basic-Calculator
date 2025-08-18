@@ -1,15 +1,13 @@
 # Simple calculator 
-#what do you need for a calculator? loops or using switch cases?
+
 
 import math
 import string
-#build a code to input multiple numbers user stores
-
 num = int(input("Enter how many numbers: "))
 n = []     # creates an empty list
 for i in range(num):
     a = float(input(f"Enter number {i+1}: "))
-    n.append(a)
+    n.append(a)      #stores values of a as [1, 2, 3]
 
    
 
@@ -32,8 +30,8 @@ elif choice == 2:
     print(f"The multiplication of the numbers you entered is: {multi}")
 
 elif choice == 3:
-    result = n[0]
-    for num in n[1:]:
+    result = n[0]    # takes the 1st value 
+    for num in n[1:]:     # starts from the second value
         result -= num
     print(f"The subtraction of the numbers you entered is: {result}")
 
